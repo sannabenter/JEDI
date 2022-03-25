@@ -44,18 +44,11 @@ Adsorbed molecules
 The JEDI analysis allows force analysis for a subset of atoms. Thus, it is applicable to calculate the strain that builds up within an 
 adsorbation of a molecule onto a surface. It is possible to mask the surface using the kill_atoms script. 
 
-Installation
-=============
-
 .. toctree::
    :maxdepth: 1
    :caption: Installation:
 
    installation/prerequisites_compilation
-
-
-Preparation
-=============
 
 .. toctree::
    :maxdepth: 1
@@ -64,10 +57,6 @@ Preparation
    preparation/hess_gen
    preparation/energies_gen
    preparation/geometries_gen
-
-
-Package / Module Documentation
-==============================
 
 .. toctree::
     :maxdepth: 1
