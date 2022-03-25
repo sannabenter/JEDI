@@ -1,0 +1,11 @@
+Input file to determine which atoms should be ignored in JEDI Calculation.
+If this file is left unaltered, no atoms are ignored. 
+
+IMPORTANT: Enter only one number in each line without a line break, starting at 1!
+
+
+#################################################################
+#### Enter atom numbers to delete in relaxed geometry here: #####
+
+#################################################################
+#### Enter atom numbers to delete in strained geometry here: ####
