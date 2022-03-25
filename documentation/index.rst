@@ -49,6 +49,7 @@ Installation
 
 .. toctree::
    :maxdepth: 1
+   :caption: Installation:
 
    installation/prerequisites_compilation
 
@@ -58,6 +59,7 @@ Preparation
 
 .. toctree::
    :maxdepth: 1
+   :caption: Preparation:
    
    preparation/hess_gen
    preparation/energies_gen
