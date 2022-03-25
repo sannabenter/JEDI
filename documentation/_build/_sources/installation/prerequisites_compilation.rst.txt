@@ -9,8 +9,15 @@ IDSimF is a pure command line tool written in C++ which requires a POSIX compati
 Prerequisites
 =============
 
----
-Git
----
+-------
+Hessian
+-------
 
-`Git <https://git-scm.com/>`_ is used as version control system for IDSimF. Thus it is also used to clone the `IDsimF source code repository <https://github.com/IPAMS/IDSimF>`_ from `Github <https://github.com/>`_ to a local system where IDSimF should be installed. 
+----------
+Geometries
+----------
+
+--------
+Energies
+--------
+

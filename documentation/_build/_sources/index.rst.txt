@@ -24,7 +24,7 @@ JEDI currently provides ... main features:
 What JEDI cannot do 
 -------------------
 
-elementspezifisch usw.
+elementspezifisch usw. hats geklappt? 
 
 Installation
 =============
