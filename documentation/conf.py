@@ -48,17 +48,21 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'guzzle_sphinx_theme'
+html_theme = 'sphinx_rtd_theme'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 # html_logo = '_static/images/IDSimF_logo_dark_short.svg'
 
-# html_theme_options = {
-#     'logo_only': False
-# }
+html_theme_options = {
+    'style_nav_header_background': '#0b750a'
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Make Sphinx use the custom.css file in _static, to change colors.
+def setup(app):
+    app.add_css_file('custom.css')

@@ -13,7 +13,7 @@ Q-Chem or ORCA
 possible files: 
 Single Point Calculation or Geometry Optimization
 
-use as "python xyz_gen.py <input_file.out> <program> <geometry>
+use as "python xyz_gen.py <input_file.out> <program> <geometry>"
 
 <program> : Q_Chem or ORCA
 <geometry> : x0 or xF
