@@ -3,15 +3,15 @@
 } */
 
 a {
-    color: #0b750a; 
+    color: #589234; 
 }
 
 a.icon {
-    color: #0b750a; 
+    color: #589234; 
 }
 
 a.reference.external {
-    color: #0b750a; 
+    color: #589234; 
 }
 
 a.reference.external:visited {
@@ -33,7 +33,7 @@ a.reference.internal:visited {
 
 
 .wy-menu-vertical header, .wy-menu-vertical p.caption {
-    color: #0b750a;
+    color: #589234;
 
 .wy-menu-vertical a, .wy-menu-vertical a:visited{
     color: #fff
