@@ -1,0 +1,11 @@
+
+======================
+Installation and Input
+======================
+
+.. toctree::
+    :maxdepth: 1
+
+    setup
+    input
+

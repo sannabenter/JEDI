@@ -1,0 +1,12 @@
+.. _installation:
+
+==============================
+Prerequisites and Installation
+==============================
+
+.. toctree::
+    :maxdepth: 1
+
+    installation
+    prerequisites
+

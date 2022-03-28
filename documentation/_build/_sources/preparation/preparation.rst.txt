@@ -1,0 +1,13 @@
+===========
+Preparation
+===========
+
+The JEDI ANalysis bla
+
+.. toctree::
+    :maxdepth: 1
+
+    energies_gen
+    geometries_gen
+    hess_gen
+
