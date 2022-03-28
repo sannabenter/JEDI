@@ -4,7 +4,7 @@ from jedi_functions import search_lines
 
 """
 
-Script to extract the geometry of a molecule and save it as xyz file. 
+Script to extract the energies of the strained and relaxed geometry. 
 
 implemented programs:
 Q-Chem or ORCA
