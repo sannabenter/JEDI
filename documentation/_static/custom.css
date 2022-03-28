@@ -1,21 +1,48 @@
-
-
-/* Sidebar header (and topbar for mobile) */
-/* .wy-side-nav-search, .wy-nav-top {
-    background: #0b750a;
-} */
-
-/* Sidebar */
-/* .wy-nav-side {
-    accent-color: #ff0000;
-} */
-
-
-.wy-menu-vertical header, .wy-menu-vertical p.caption {
+/* wy-menu-vertical header, .wy-menu-vertical p.caption {
     color: #0b750a;
-}
+} */
 
 a {
     color: #0b750a; 
 }
 
+a.icon {
+    color: #0b750a; 
+}
+
+a.reference.external {
+    color: #0b750a; 
+}
+
+a.reference.external:visited {
+    color: #67c76391; 
+}
+
+a.reference.internal:visited {
+    color: #8b8b8b; 
+}
+
+
+/* a.reference.internal {
+    color: #0b750a; 
+} */
+
+.wy-side-nav-search .wy-dropdown>a, .wy-side-nav-search>a {
+    color: #fcfcfc;
+}
+
+
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+    color: #0b750a;
+
+.wy-menu-vertical a, .wy-menu-vertical a:visited{
+    color: #fff
+} 
+
+.wy-nav-top a, .wy-nav-top a:visited {
+    color: #fff
+}
+
+/* .wy_breadcrumbs {
+    color: rgb(58, 58, 58)
+} */ */
