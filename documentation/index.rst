@@ -65,7 +65,7 @@ Documentation
     :maxdepth: 1
     :caption: User Guide    
 
-    usersguide/general_structure
+    userguide/general_structure
 
 .. toctree::
    :maxdepth: 1

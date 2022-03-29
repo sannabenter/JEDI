@@ -2,17 +2,17 @@
     color: #0b750a;
 } */
 
-a {
+/* a {
+    color: #0b750a; 
+} */
+
+a, a.icon, a.reference.external {
     color: #0b750a; 
 }
 
-a.icon {
+/* a.reference.external {
     color: #0b750a; 
-}
-
-a.reference.external {
-    color: #0b750a; 
-}
+} */
 
 a.reference.external:visited {
     color: #67c76391; 
@@ -21,11 +21,6 @@ a.reference.external:visited {
 a.reference.internal:visited {
     color: #8b8b8b; 
 }
-
-
-/* a.reference.internal {
-    color: #0b750a; 
-} */
 
 .wy-side-nav-search .wy-dropdown>a, .wy-side-nav-search>a {
     color: #fcfcfc;
@@ -42,7 +37,3 @@ a.reference.internal:visited {
 .wy-nav-top a, .wy-nav-top a:visited {
     color: #fff
 }
-
-/* .wy_breadcrumbs {
-    color: rgb(58, 58, 58)
-} */ */
