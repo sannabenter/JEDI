@@ -44,6 +44,20 @@ prints the installed ``git`` version. If ``git`` is not installed, install it wi
 
     sudo apt install git 
 
+
+JEDI runs with ``Python 3.7``. Check, if it is installed with
+
+.. code-block:: console
+
+    python --version 
+
+If ``Python 2.7`` is running on your system or if ``Python`` is not installed, install with 
+
+.. code-block:: console
+
+    sudo apt install python3.7
+
+
 --------------------------
 Clone the JEDI repository
 --------------------------
