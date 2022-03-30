@@ -13,7 +13,7 @@ Q-Chem or ORCA
 possible files: 
 Single Point Calculation or Geometry Optimization
 
-use as "python xyz_gen.py <input_file.out> <program> <geometry>"
+use as "python xyz_gen.py <input_file.out> <program> <geometry>
 
 <program> : Q_Chem or ORCA
 <geometry> : x0 or xF
@@ -51,7 +51,7 @@ if program == "Q_Chem":
         cart_line = search_lines("Standard Nuclear Orientation (Angstroms)", in_file)    #search for string to determine start of printout of coordinates
         for i in range(cart_line+2,cart_line+2+int(atom_count)): 
             cart = in_file[i].split()
-            print(float(cart[2])*1.889725989, '\t', float(cart[3])*1.889725989, '\t', float(cart[4])*1.889725989, file = out_file)
+            print(cart[1], float(cart[2])*1.889725989, '\t', float(cart[3])*1.889725989, '\t', float(cart[4])*1.889725989, file = out_file)
 
 elif program == "ORCA": 
     with open(in_file) as in_file:
@@ -61,16 +61,15 @@ elif program == "ORCA":
 
         # number of atoms
         atom_count = 0
-        for line in range(cart_line+1, len(in_file)):
+        for line in range(cart_line+2, len(in_file)):
             if in_file[line].startswith("----------------------------"):
                 atom_count = atom_count - 1
                 break
             atom_count +=1
         print(atom_count, "\n", file = out_file)
-
         # cartesian coordinates
         for j in range(cart_line+2, cart_line+2+int(atom_count)): 
             cart = in_file[j].split()
-            print(float(cart[5]), '\t', float(cart[6]),'\t', float(cart[7]), file = out_file)
+            print(cart[1], float(cart[5]), '\t', float(cart[6]),'\t', float(cart[7]), file = out_file)
 
 out_file.close()

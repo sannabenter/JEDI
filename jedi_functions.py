@@ -91,9 +91,9 @@ def read_xyz(file):
     for line in file: 
         if ln > 1:
             coords = line.strip("\t").split()
-            x_coords.append(float(coords[0]))
-            y_coords.append(float(coords[1]))
-            z_coords.append(float(coords[2]))
+            x_coords.append(float(coords[1]))
+            y_coords.append(float(coords[2]))
+            z_coords.append(float(coords[3]))
         ln += 1
         
     return np.array((x_coords, y_coords, z_coords)).T

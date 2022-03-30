@@ -26,6 +26,16 @@ if os.path.exists("ba.txt"):
 if os.path.exists("da.txt"):
     os.remove("da.txt")
 
+df_lib_elements = pd.DataFrame(columns=('radius', 'element')) 
+
+row = 0
+with open("jedi_elements-library.txt", "r") as lib_elements: 
+    for element_line in lib_elements: 
+        element_line = element_line.split()
+        
+        df_lib_elements.loc[row] = [element_line[0], element_line[2]]
+        row += 1
+
 def vector_length(x_atom1, y_atom1, z_atom1, x_atom2, y_atom2, z_atom2): # function to calculate bondlength
     vec = [0, 0, 0]
     vec[0] = float(x_atom2) - float(x_atom1)
@@ -45,15 +55,17 @@ df_da = pd.DataFrame(columns=('DA_1', 'DA_2', 'DA_3', 'DA_4')) # dataframe conta
 
 with open("x0.txt", "r") as x0: # extract cartesian coordinates into list -> dataframe
     ln = 0
+    elements = []
     x_coords = []
     y_coords = []
     z_coords = []
     for line in x0: 
         if ln > 1:
             coords = line.strip("\t").split()
-            x_coords.append(coords[0])
-            y_coords.append(coords[1])
-            z_coords.append(coords[2])
+            elements.append(coords[0])
+            x_coords.append(coords[1])
+            y_coords.append(coords[2])
+            z_coords.append(coords[3])
         ln += 1
 
 df_coords = pd.DataFrame(
@@ -61,7 +73,6 @@ df_coords = pd.DataFrame(
      'y': y_coords,
      'z': z_coords
     })
-
 
     ####################################
     ############ BOND LENGTHS ##########
@@ -75,21 +86,31 @@ if bl_state == False:
         for other_index in range(0, len(x_coords)): # iterates through all atom indices
             if other_index > self_index: # only iterate through every bond once
 
+                self_element = elements[self_index]
                 x = df_coords.at[int(self_index), 'x']
                 y = df_coords.at[int(self_index), 'y']
                 z = df_coords.at[int(self_index), 'z']
 
+                other_element = elements[other_index]
                 x_other = df_coords.at[int(other_index), 'x']
                 y_other = df_coords.at[int(other_index), 'y']
                 z_other = df_coords.at[int(other_index), 'z']
 
                 len_vec = vector_length(x, y, z, x_other, y_other, z_other) # calculate vector length
-                
-                if len_vec < 2.8: 
-                    df_bl.loc[row_index] = [other_index+1, self_index+1] # add bondlengths to dataframe
-                
-                    row_index += 1 
 
+                self_loc = df_lib_elements[df_lib_elements['element']==self_element].index.values
+                other_loc = df_lib_elements[df_lib_elements['element']==other_element].index.values
+
+                self_radius = df_lib_elements['radius'].iloc[self_loc]
+                other_radius = df_lib_elements['radius'].iloc[other_loc]
+
+                virtual_bl = (float(self_radius) + float(other_radius))*1.889725989
+
+                if abs(len_vec-virtual_bl) < 0.3: 
+                    df_bl.loc[row_index] = [other_index+1, self_index+1] # add bondlengths to dataframe
+
+                    row_index += 1 
+    
 
     with open("bl.txt", "a") as bl_file:
         for index, row in df_bl.iterrows():

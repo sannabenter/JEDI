@@ -101,7 +101,7 @@ else:
 for filename in file_list:
 	if filename == "vmd_bl.tcl" or filename == "vmd_ba.tcl" or filename == "vmd_da.tcl" or filename == "vmd_all.tcl":
 		f = open(filename, 'w')
-		f.write('# Load a molecule\nmol new geom.xyz\n\n')
+		f.write('# Load a molecule\nmol new xF.xyz\n\n')
 		f.write('# Change bond radii and various resolution parameters\nmol representation cpk 0.8 0.0 30 5\nmol representation bonds 0.2 30\n\n')
 		f.write('# Change the drawing method of the first graphical representation to CPK\nmol modstyle 0 top cpk\n')
 		f.write('# Color only H atoms white\nmol modselect 0 top {name H}\n')

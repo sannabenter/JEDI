@@ -170,27 +170,7 @@ if __name__ == '__main__':
     if vmd_flag == True: 
         pass
 
-    # # create a geom.xyz file for the VMD analysis
-
-    #     # read in coords from xF_file
-    #     xF_coords = []
-    #     if os.path.exists("xF.txt"):
-    #         xF_file = "xF.txt"
-    #     elif os.path.exists("xF_manip.txt"):
-    #         xF_file = "xF_manip.txt"
-
-    #     xF = xyz_gen(xF_file)
-        
-    #     atomtypes_arr = (np.asarray(atomtypes)).reshape(-1, 1) # atomtypes müssen implementiert werden!
-    #     xyz_geoms = np.column_stack((atomtypes, xF))
-
-    #     if os.path.isfile('geom.xyz') == True:
-    #         os.remove('geom.xyz')
-    #     with open('geom.xyz', 'w+') as geom_file: 
-    #         print((int(NAtoms)-len(ls_NrAtoms)), "\n", file = geom_file)
-    #         for row in xyz_geoms:
-    #             print("%s %0.10f %0.10f %0.10f" %(row[0], float(row[1])/1.889725989, float(row[2])/1.889725989, float(row[3])/1.889725989), file = geom_file)
-    #     import vmd_gen
+        import vmd_gen
 
     # Fairwell messages
     print("\n")
