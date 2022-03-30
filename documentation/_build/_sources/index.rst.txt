@@ -73,7 +73,6 @@ Documentation
 
    modules/jedi_files
    modules/jedi_rims
-   modules/jedi_primitives
    modules/jedi_kill_atoms
    modules/jedi_b
    modules/jedi_delta_q
