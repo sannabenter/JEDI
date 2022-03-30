@@ -1,18 +1,7 @@
-/* wy-menu-vertical header, .wy-menu-vertical p.caption {
-    color: #0b750a;
-} */
 
-/* a {
-    color: #0b750a; 
-} */
-
-a, a.icon, a.reference.external {
+a, a.icon, a.reference.external, a.fa.fa-github, a.fa.fa-github:visited {
     color: #0b750a; 
 }
-
-/* a.reference.external {
-    color: #0b750a; 
-} */
 
 a.reference.external:visited {
     color: #8b8b8b; 
