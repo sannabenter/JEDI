@@ -51,6 +51,11 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#general-structure">General structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-arguments">Optional Arguments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#specify-a-directory">Specify a directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generate-vmd-output">Generate VMD Output</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -81,19 +86,47 @@
              
   <section id="user-guide">
 <h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline"></a></h1>
-<p>The JEDI Analysis requires redundant internal coordinates, where as the input data is
-given in cartesian coordinates.</p>
+<p>The JEDI Analysis requires the input in redundant internal coordinates, where as the input data is
+given in cartesian coordinates. The main routine of the JEDI Analysis converts the
+cartesian coordinates and the Hessian in redundant internal coordinates to then apply the
+harmonic approximation to calculate the energies in the redundant internal coordinates.
+To convert the input into cartesian coordinates, the B-Matrix is calculated according to
+V. Bakken, T. Helgaker, J. Chem. Phys. 117 (20) 2002.</p>
 <section id="general-structure">
 <h2>General structure<a class="headerlink" href="#general-structure" title="Permalink to this headline"></a></h2>
-<p>The main routine <code class="docutils literal notranslate"><span class="pre">jedi.py</span></code> runs all the subscripts in the following order:</p>
+<p>The main routine <code class="docutils literal notranslate"><span class="pre">jedi.py</span></code> runs all subscripts in the following order:</p>
 <ol class="arabic simple">
 <li><p>Read x0, xF and the Hessian (<code class="docutils literal notranslate"><span class="pre">jedi_files.py</span></code>)</p></li>
-<li><p>Calculate the redundant internal modes from the relaxed geometry (<code class="docutils literal notranslate"><span class="pre">jedi_rims.py</span></code>)</p></li>
-<li><p>Check if atoms are to be masked (<code class="docutils literal notranslate"><span class="pre">jedi_kill_atoms.py</span></code>)</p></li>
+<li><p>Calculate the redundant internal modes of the relaxed geometry (<code class="docutils literal notranslate"><span class="pre">jedi_rims.py</span></code>)</p></li>
+<li><p>Check if atoms are defined to be masked (<code class="docutils literal notranslate"><span class="pre">jedi_kill_atoms.py</span></code>)</p></li>
 <li><p>Calculate the B-Matrix (<code class="docutils literal notranslate"><span class="pre">jedi_b.py</span></code>)</p></li>
 <li><p>Convert the change in cartesian coordinates into redundant internal coordinates (<code class="docutils literal notranslate"><span class="pre">jedi_delta_q.py</span></code>)</p></li>
 <li><p>Run the JEDI Analysis</p></li>
 </ol>
+</section>
+<section id="optional-arguments">
+<h2>Optional Arguments<a class="headerlink" href="#optional-arguments" title="Permalink to this headline"></a></h2>
+<p>The main routine <code class="docutils literal notranslate"><span class="pre">jedi.py</span></code> takes two optional arguments.</p>
+<section id="specify-a-directory">
+<h3>Specify a directory<a class="headerlink" href="#specify-a-directory" title="Permalink to this headline"></a></h3>
+<p>By calling a <code class="docutils literal notranslate"><span class="pre">--d</span></code> flag a path can be specified, that already contains a
+list of redundant internal modes.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">jedi.py --d &lt;directory_path&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="generate-vmd-output">
+<h3>Generate VMD Output<a class="headerlink" href="#generate-vmd-output" title="Permalink to this headline"></a></h3>
+<p>By default the JEDI Analysis generates a VMD readable output, which defines colors
+bonds according to the stress energy stored in them (green: low strain, yellow: medium
+strain, red: high strain; transitions are fluent).</p>
+<p>The –v flag can be either used to suppress the vmd_gen.py script or to manually specify
+a maximum strain that is colored “redest” in the VMD Analysis.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">jedi.py --v n/maximum_strain</span>
+</pre></div>
+</div>
+<p>For further information in the <code class="docutils literal notranslate"><span class="pre">--d</span></code> or <code class="docutils literal notranslate"><span class="pre">--v</span></code> flag, please take a closer look into the according modules.</p>
+</section>
 </section>
 </section>
 

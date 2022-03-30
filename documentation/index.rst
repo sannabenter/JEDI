@@ -71,15 +71,14 @@ Documentation
    :maxdepth: 1
    :caption: Modules
 
-   modules/module_overview
    modules/jedi_files
-   modules/jedi_directory
    modules/jedi_rims
    modules/jedi_primitives
    modules/jedi_kill_atoms
    modules/jedi_b
    modules/jedi_delta_q
    modules/jedi
+   modules/vmd_gen
 
 
 Indices and tables

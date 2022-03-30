@@ -3,7 +3,7 @@ Energies
 ========
 
 To compare the ab initio energies and the energy calculated with the harmonic approximation, 
-the JEDI Analysis can be run with an optional energies.txt file containing the ab initio energies. 
+the JEDI Analysis takes an E_geoms.txt file containing the ab initio energies. 
 ``energies_gen.py`` extracts the energies from the DFT calculation files. 
 
 implemented programs:
