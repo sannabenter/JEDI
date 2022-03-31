@@ -79,6 +79,14 @@ Documentation
    modules/jedi
    modules/vmd_gen
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Examples
+
+   examples/preparation
+   examples/main_routine
+   examples/maximum_strain
+
 
 Indices and tables
 ==================
