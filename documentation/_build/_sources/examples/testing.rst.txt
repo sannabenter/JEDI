@@ -40,13 +40,13 @@ To generate the file containing the energies of both geometries and the energy d
 
     python energies_gen.py path/methanol.out path/methanol_xhcff_strained.out Q_Chem 
 
-This should produce an output that looks something like this
+This should produce an output that looks something like this:
 
 .. code-block:: none
 
     0.014641748931055076 	 -115.5638587003 	 -115.57850044923106
 
-Lastly, generate a file containing the Hessian with
+Lastly, generate a file containing the Hessian with:
 
 .. code-block:: console
 
@@ -64,15 +64,39 @@ as ``x0.txt`` and ``xF.txt``  and (4) the ``E_Geoms.txt`` files.
      
 Main routine
 ------------
-Run the JEDI Analysis using 
+Run the JEDI Analysis using:
 
 .. code-block:: console
 
     python energies_gen.py path/methanol.out path/methanol_xhcff_strained.out Q_Chem 
 
+The output is shown and discussed in the `Output Section <https://jedi-analysis.readthedocs.io/en/latest/userguide/output.html>`_.
+
+Masking atoms
+--------------
+To mask atoms (e.g. surface atoms) the to be masked atoms need to be given in the ``jedi_kill_atoms_input.txt`` file. 
+If this file is left unaltered, no atoms are ignored.  
+
 Maximum strain
 --------------
+When analyzing molecule fragments it can be helpful to define a maximum strain that represents the "redest" color in the VMD Analysis.
+To apply a maximum strain, run the JEDI Analysis using the --v flag and call the maximum strain in hartree. 
 
+.. code-block:: console
 
-Deleting Atoms
---------------
+    python jedi.py --v max_strain
+
+This feature was applied in the analysis of molecule fragments, such as in the following figure 
+(maximum strains: left : 0.007 hartree; middle : no maximum strain given, default 0.014 hartree; right: 0.057 hartree). 
+
+.. image:: SAM_man_strains.png
+   :align: center
+
+Adding more atoms in VMD Analysis
+---------------------------------
+
+In default, the VMD Analysis only displays H, C, N, O and S. 
+It is possible to add one or more atoms that should be colored to these tcl scripts.
+For this, specify them as individual lines with their RGB values in a file vmd_add.txt.
+For adding Ti atoms, for example, vmd_add.txt would look like this:
+C 0.5 0.5 0.5

@@ -65,8 +65,9 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Examples and test files</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#preparation">Preparation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#main-routine">Main routine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#masking-atoms">Masking atoms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#maximum-strain">Maximum strain</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#deleting-atoms">Deleting Atoms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-more-atoms-in-vmd-analysis">Adding more atoms in VMD Analysis</a></li>
 </ul>
 </li>
 </ul>
@@ -126,11 +127,11 @@ H 4.117526839264233          -4.815219618914076      5.343311349029762
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python energies_gen.py path/methanol.out path/methanol_xhcff_strained.out Q_Chem</span>
 </pre></div>
 </div>
-<p>This should produce an output that looks something like this</p>
+<p>This should produce an output that looks something like this:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0.014641748931055076         -115.5638587003         -115.57850044923106
 </pre></div>
 </div>
-<p>Lastly, generate a file containing the Hessian with</p>
+<p>Lastly, generate a file containing the Hessian with:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python hess_gen.py path/methanol_freq.out Q_Chem 6</span>
 </pre></div>
 </div>
@@ -145,16 +146,35 @@ the JEDI program lies in.</p>
 </section>
 <section id="main-routine">
 <h2>Main routine<a class="headerlink" href="#main-routine" title="Permalink to this headline"></a></h2>
-<p>Run the JEDI Analysis using</p>
+<p>Run the JEDI Analysis using:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python energies_gen.py path/methanol.out path/methanol_xhcff_strained.out Q_Chem</span>
 </pre></div>
 </div>
+<p>The output is shown and discussed in the <a class="reference external" href="https://jedi-analysis.readthedocs.io/en/latest/userguide/output.html">Output Section</a>.</p>
+</section>
+<section id="masking-atoms">
+<h2>Masking atoms<a class="headerlink" href="#masking-atoms" title="Permalink to this headline"></a></h2>
+<p>To mask atoms (e.g. surface atoms) the to be masked atoms need to be given in the <code class="docutils literal notranslate"><span class="pre">jedi_kill_atoms_input.txt</span></code> file.
+If this file is left unaltered, no atoms are ignored.</p>
 </section>
 <section id="maximum-strain">
 <h2>Maximum strain<a class="headerlink" href="#maximum-strain" title="Permalink to this headline"></a></h2>
+<p>When analyzing molecule fragments it can be helpful to define a maximum strain that represents the “redest” color in the VMD Analysis.
+To apply a maximum strain, run the JEDI Analysis using the –v flag and call the maximum strain in hartree.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python jedi.py --v max_strain</span>
+</pre></div>
+</div>
+<p>This feature was applied in the analysis of molecule fragments, such as in the following figure
+(maximum strains: left : 0.007 hartree; middle : no maximum strain given, default 0.014 hartree; right: 0.057 hartree).</p>
+<img alt="../_images/SAM_man_strains.png" class="align-center" src="../_images/SAM_man_strains.png" />
 </section>
-<section id="deleting-atoms">
-<h2>Deleting Atoms<a class="headerlink" href="#deleting-atoms" title="Permalink to this headline"></a></h2>
+<section id="adding-more-atoms-in-vmd-analysis">
+<h2>Adding more atoms in VMD Analysis<a class="headerlink" href="#adding-more-atoms-in-vmd-analysis" title="Permalink to this headline"></a></h2>
+<p>In default, the VMD Analysis only displays H, C, N, O and S.
+It is possible to add one or more atoms that should be colored to these tcl scripts.
+For this, specify them as individual lines with their RGB values in a file vmd_add.txt.
+For adding Ti atoms, for example, vmd_add.txt would look like this:
+C 0.5 0.5 0.5</p>
 </section>
 </section>
 
