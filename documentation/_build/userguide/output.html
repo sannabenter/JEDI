@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading and interpreting the output &mdash; JEDI-Analysis 25.3.2022 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Module: jedi_files" href="../modules/jedi_files.html" />
+    <link rel="prev" title="User Guide" href="general_structure.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0b750a" >
+            <a href="../index.html" class="icon icon-home"> JEDI-Analysis
+            <img src="../_static/Logo_JEDI_dark_grey.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Set Up:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation/setup.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation/setup.html#building-guide">Building Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Preparation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preparation/input_data.html">Input Data</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="general_structure.html">User Guide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reading and interpreting the output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#raw-output">Raw output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vmd-analysis">VMD Analysis</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_files.html">Module: jedi_files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_files.html#module-jedi-directory">Module: jedi_directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_rims.html">Module: jedi_rims</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_kill_atoms.html">Module: jedi_kill_atoms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/vmd_gen.html">Module: vmd_gen</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples/testing.html">Examples and test files</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #0b750a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">JEDI-Analysis</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Reading and interpreting the output</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/userguide/output.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="reading-and-interpreting-the-output">
+<h1>Reading and interpreting the output<a class="headerlink" href="#reading-and-interpreting-the-output" title="Permalink to this headline"></a></h1>
+<p>This is the output of the JEDI Analysis of the example files provided in the
+<a class="reference external" href="https://github.com/sannabenter/JEDI/tree/main/test_files">Github folder</a>. To do the test calculation,
+please take a closer look into the <a class="reference external" href="https://jedi-analysis.readthedocs.io/en/latest/examples/testing">Examples Section</a>.</p>
+<section id="raw-output">
+<h2>Raw output<a class="headerlink" href="#raw-output" title="Permalink to this headline"></a></h2>
+<p>..code-block:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Preparing</span> <span class="n">the</span> <span class="n">JEDI</span> <span class="n">analysis</span><span class="o">...</span>
+
+<span class="n">Starting</span> <span class="n">jedi_rims</span><span class="o">.</span><span class="n">py</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">redundant</span> <span class="n">internal</span> <span class="n">modes</span> <span class="kn">from</span> <span class="nn">cartesian</span> <span class="n">coordinates</span><span class="o">.</span>
+<span class="n">Starting</span> <span class="n">jedi_kill_atoms</span><span class="o">.</span><span class="n">py</span> <span class="n">to</span> <span class="n">check</span> <span class="k">if</span> <span class="n">atoms</span> <span class="n">specified</span><span class="p">,</span> <span class="n">that</span> <span class="n">should</span> <span class="n">be</span> <span class="n">ignored</span> <span class="ow">in</span> <span class="n">JEDI</span><span class="o">-</span><span class="n">Calculation</span><span class="o">.</span>
+    <span class="n">INFO</span><span class="p">:</span> <span class="n">No</span> <span class="n">user</span> <span class="nb">input</span> <span class="ow">in</span> <span class="n">jedi_kill_atoms_input</span><span class="o">.</span><span class="n">txt</span><span class="p">,</span> <span class="n">so</span> <span class="n">no</span> <span class="n">atoms</span> <span class="n">are</span> <span class="n">ignored</span> <span class="ow">in</span> <span class="n">JEDI</span><span class="o">-</span><span class="n">Calculation</span><span class="o">.</span>
+<span class="n">Starting</span> <span class="n">b_mat</span><span class="o">.</span><span class="n">py</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">the</span> <span class="n">B</span><span class="o">-</span><span class="n">Matrix</span><span class="o">.</span>
+<span class="n">Starting</span> <span class="n">delta_q</span><span class="o">.</span><span class="n">py</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">q0</span><span class="p">,</span> <span class="n">qF</span> <span class="ow">and</span> <span class="n">delta_q</span><span class="o">.</span>
+
+
+                 <span class="n">JEDI</span> <span class="n">ANALYSIS</span>
+       <span class="n">Judgement</span> <span class="n">of</span> <span class="n">Energy</span> <span class="n">DIstribution</span>
+
+
+                <span class="n">Strain</span> <span class="n">Energy</span> <span class="p">(</span><span class="n">h</span><span class="p">)</span>  <span class="n">Deviation</span> <span class="p">(</span><span class="o">%</span><span class="p">)</span>
+    <span class="n">Geometries</span>      <span class="mf">0.01464175</span>           <span class="o">-</span>
+<span class="n">Red</span><span class="o">.</span> <span class="n">Int</span><span class="o">.</span> <span class="n">Modes</span>      <span class="mf">0.01274058</span>        <span class="o">-</span><span class="mf">12.98</span>
+
+<span class="n">RIM</span> <span class="n">No</span><span class="o">.</span>    <span class="n">RIM</span> <span class="nb">type</span>             <span class="n">Percentage</span>    <span class="n">Energy</span> <span class="p">(</span><span class="n">h</span><span class="p">)</span>
+    <span class="mi">1</span>       <span class="n">BL</span> <span class="mi">2</span> <span class="mi">1</span>                 <span class="mf">16.0</span>        <span class="mf">0.0020347</span>
+    <span class="mi">2</span>       <span class="n">BL</span> <span class="mi">3</span> <span class="mi">1</span>                 <span class="mf">15.9</span>        <span class="mf">0.0020255</span>
+    <span class="mi">3</span>       <span class="n">BL</span> <span class="mi">4</span> <span class="mi">1</span>                 <span class="mf">15.0</span>        <span class="mf">0.0019052</span>
+    <span class="mi">4</span>       <span class="n">BL</span> <span class="mi">5</span> <span class="mi">1</span>                 <span class="mf">41.5</span>        <span class="mf">0.0052871</span>
+    <span class="mi">5</span>       <span class="n">BL</span> <span class="mi">6</span> <span class="mi">5</span>                 <span class="mf">12.1</span>        <span class="mf">0.0015433</span>
+    <span class="mi">6</span>       <span class="n">BA</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">3</span>               <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000037</span>
+    <span class="mi">7</span>       <span class="n">BA</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">4</span>                <span class="mf">0.0</span>        <span class="mf">0.0000062</span>
+    <span class="mi">8</span>       <span class="n">BA</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">5</span>               <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000045</span>
+    <span class="mi">9</span>       <span class="n">BA</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">4</span>               <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000023</span>
+    <span class="mi">10</span>       <span class="n">BA</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">5</span>               <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000032</span>
+    <span class="mi">11</span>       <span class="n">BA</span> <span class="mi">4</span> <span class="mi">1</span> <span class="mi">5</span>                <span class="mf">0.1</span>        <span class="mf">0.0000133</span>
+    <span class="mi">12</span>       <span class="n">BA</span> <span class="mi">1</span> <span class="mi">5</span> <span class="mi">6</span>               <span class="o">-</span><span class="mf">0.5</span>       <span class="o">-</span><span class="mf">0.0000645</span>
+    <span class="mi">13</span>       <span class="n">DA</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">1</span> <span class="mi">2</span>              <span class="mf">0.0</span>        <span class="mf">0.0000012</span>
+    <span class="mi">14</span>       <span class="n">DA</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">1</span> <span class="mi">3</span>              <span class="mf">0.0</span>        <span class="mf">0.0000034</span>
+    <span class="mi">15</span>       <span class="n">DA</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">1</span> <span class="mi">4</span>             <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000010</span>
+
+
+<span class="n">Creating</span> <span class="n">tcl</span> <span class="n">scripts</span> <span class="k">for</span> <span class="n">generating</span> <span class="n">color</span><span class="o">-</span><span class="n">coded</span> <span class="n">structures</span> <span class="ow">in</span> <span class="n">VMD</span><span class="o">...</span>
+
+<span class="n">Processing</span> <span class="n">bond</span> <span class="n">lengths</span><span class="o">...</span>
+<span class="n">Maximum</span> <span class="n">energy</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">bond</span> <span class="n">length</span><span class="p">:</span>       <span class="mf">41.50</span><span class="o">%</span>
+<span class="n">Total</span> <span class="n">energy</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">bond</span> <span class="n">lengths</span><span class="p">:</span>     <span class="mf">100.43</span>
+
+<span class="n">Processing</span> <span class="n">bond</span> <span class="n">angles</span><span class="o">...</span>
+<span class="n">Maximum</span> <span class="n">energy</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">bond</span> <span class="n">angle</span><span class="p">:</span>         <span class="mf">0.10</span><span class="o">%</span>
+<span class="n">Total</span> <span class="n">energy</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">bond</span> <span class="n">angles</span><span class="p">:</span>       <span class="o">-</span><span class="mf">0.46</span>
+
+<span class="n">Processing</span> <span class="n">dihedral</span> <span class="n">angles</span><span class="o">...</span>
+<span class="n">Maximum</span> <span class="n">energy</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">dihedral</span> <span class="n">angle</span><span class="p">:</span>     <span class="mf">0.03</span><span class="o">%</span>
+<span class="n">Total</span> <span class="n">energy</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">dihedral</span> <span class="n">angles</span><span class="p">:</span>    <span class="mf">0.03</span>
+
+
+
+<span class="n">JEDI</span> <span class="n">terminated</span> <span class="n">successfully</span><span class="o">.</span>
+
+<span class="s2">&quot;No reward is worth this.&quot;</span> <span class="p">(</span><span class="n">Han</span> <span class="n">Solo</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The raw output shows both the strain energies of the ab initio calculations and the JEDI Analysis. The deviation can be
+interpreted as error of the harmonic approximation. This print out is followed by the percentages of the strain
+in each redundant internal mode. Lastly, the isolated strains are added up in each class of redundant internal modes
+(bond lengths, bond angles and torsion angles).</p>
+</section>
+<section id="vmd-analysis">
+<h2>VMD Analysis<a class="headerlink" href="#vmd-analysis" title="Permalink to this headline"></a></h2>
+<p>To visualize the strain distribution an output is generated, that is readable in a
+<a class="reference external" href="https://www.ks.uiuc.edu/Research/vmd/">VMD Analysis</a>. The VMD Analysis a tool that
+can be used to color code the bonds according to the strain.</p>
+<p>In the given example a VMD Output of all strain contributions in all modes would look something like this:</p>
+<a class="reference internal image-reference" href="../_images/meoh_vmd.png"><img alt="alternate text" class="align-center" src="../_images/meoh_vmd.png" style="width: 214.5px; height: 189.5px;" /></a>
+<p>The dark red O-C-bond indicates the highest strain in this molecule area. A similar VMD readable output
+is generated for the indivual modes (bond lengths, angles and torsions).</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="general_structure.html" class="btn btn-neutral float-left" title="User Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../modules/jedi_files.html" class="btn btn-neutral float-right" title="Module: jedi_files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Institute for physical and theoretical chemistry, University Bremen, Germany.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

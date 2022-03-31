@@ -66,6 +66,7 @@ Documentation
     :caption: User Guide    
 
     userguide/general_structure
+    userguide/output
 
 .. toctree::
    :maxdepth: 1
@@ -83,9 +84,7 @@ Documentation
    :maxdepth: 1
    :caption: Examples
 
-   examples/preparation
-   examples/main_routine
-   examples/maximum_strain
+   examples/testing
 
 
 Indices and tables

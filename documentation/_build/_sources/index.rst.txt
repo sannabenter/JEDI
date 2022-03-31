@@ -66,6 +66,7 @@ Documentation
     :caption: User Guide    
 
     userguide/general_structure
+    userguide/output
 
 .. toctree::
    :maxdepth: 1
@@ -78,6 +79,12 @@ Documentation
    modules/jedi_delta_q
    modules/jedi
    modules/vmd_gen
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Examples
+
+   examples/testing
 
 
 Indices and tables
