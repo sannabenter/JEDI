@@ -5,12 +5,9 @@ Module: jedi_rims
 This script converts cartesian coordinates (from x0.txt) into redundant internal modes. 
 It creates three files containing the internal modes: 
 
-bl.txt - containing all the bonds
-ba.txt - containing all the bondangles
-da.txt - containing all the torsionangles
-
-Bond lengths
-------------
+* bl.txt - containing all the bonds
+* ba.txt - containing all the bond angles
+* da.txt - containing all the torsion angles
 
 To define the bond lengths in a molecule, a database is imported containing the 
 average covalent radius of every element. 
@@ -20,8 +17,4 @@ bond length of the considered bond.
 Within a threshold of 0.3 a.u. bonds are defined by comparing the 
 atomic distances and the sum of the covalent radii.
 
-
-Bond angles
------------
-
-Bond angles are defined along the bonds.
+The bond and torsion angles are defined along the bonds.

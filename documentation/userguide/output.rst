@@ -2,7 +2,7 @@
 Reading and interpreting the output
 ===================================
 
-This is the output of the JEDI Analysis of the example files provided in the 
+The shown output of the JEDI Analysis of the example files provided in the 
 `Github folder <https://github.com/sannabenter/JEDI/tree/main/test_files>`_. To do the test calculation, 
 please take a closer look into the `Examples Section <https://jedi-analysis.readthedocs.io/en/latest/examples/testing>`_.
 

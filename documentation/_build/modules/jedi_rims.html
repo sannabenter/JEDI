@@ -57,12 +57,10 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="jedi_files.html">Module: jedi_files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jedi_files.html#module-jedi-directory">Module: jedi_directory</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Module: jedi_rims</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#bond-lengths">Bond lengths</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#bond-angles">Bond angles</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Module: jedi_rims</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jedi_kill_atoms.html">Module: jedi_kill_atoms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jedi_b.html">Modules: jedi_b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jedi_delta_q.html">Modules: jedi_delta_q</a></li>
 <li class="toctree-l1"><a class="reference internal" href="vmd_gen.html">Module: vmd_gen</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Examples</span></p>
@@ -98,11 +96,11 @@
 <h1>Module: jedi_rims<a class="headerlink" href="#module-jedi-rims" title="Permalink to this headline"></a></h1>
 <p>This script converts cartesian coordinates (from x0.txt) into redundant internal modes.
 It creates three files containing the internal modes:</p>
-<p>bl.txt - containing all the bonds
-ba.txt - containing all the bondangles
-da.txt - containing all the torsionangles</p>
-<section id="bond-lengths">
-<h2>Bond lengths<a class="headerlink" href="#bond-lengths" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>bl.txt - containing all the bonds</p></li>
+<li><p>ba.txt - containing all the bond angles</p></li>
+<li><p>da.txt - containing all the torsion angles</p></li>
+</ul>
 <p>To define the bond lengths in a molecule, a database is imported containing the
 average covalent radius of every element.
 The molecule is mapped by calculating all atomic distances.
@@ -110,11 +108,7 @@ The covalent radii of the involved atoms are summed to define the theoretical
 bond length of the considered bond.
 Within a threshold of 0.3 a.u. bonds are defined by comparing the
 atomic distances and the sum of the covalent radii.</p>
-</section>
-<section id="bond-angles">
-<h2>Bond angles<a class="headerlink" href="#bond-angles" title="Permalink to this headline"></a></h2>
-<p>Bond angles are defined along the bonds.</p>
-</section>
+<p>The bond and torsion angles are defined along the bonds.</p>
 </section>
 
 

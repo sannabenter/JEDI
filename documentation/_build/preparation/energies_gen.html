@@ -67,6 +67,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../modules/jedi_files.html#module-jedi-directory">Module: jedi_directory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modules/jedi_rims.html">Module: jedi_rims</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modules/jedi_kill_atoms.html">Module: jedi_kill_atoms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_b.html">Modules: jedi_b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_delta_q.html">Modules: jedi_delta_q</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../modules/vmd_gen.html">Module: vmd_gen</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Examples</span></p>
@@ -104,19 +106,16 @@
 <p>To compare the ab initio energies and the energy calculated with the harmonic approximation,
 the JEDI Analysis takes an E_geoms.txt file containing the ab initio energies.
 <code class="docutils literal notranslate"><span class="pre">energies_gen.py</span></code> extracts the energies from the DFT calculation files.</p>
-<p>implemented programs:
-Q-Chem or ORCA</p>
-<p>possible input files:
-Single Point Calculation or Geometry Optimization</p>
 <p>Use the wrapper script with:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python energies_gen.py &lt;opt_file&gt; &lt;force_opt_file&gt; &lt;program&gt;</span>
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>&lt;opt_file&gt; : name of the file containing the relaxed geometry</p></li>
-<li><p>&lt;force_opt_file&gt; : name of the file containing the strained geometry</p></li>
-<li><p>&lt;program&gt; : program that generated the output (either Q_Chem or ORCA)</p></li>
+<li><p>&lt;force_opt_file&gt; : name of the file containing the strained geometry; possible input files:</p></li>
 </ul>
+<p>Single Point Calculation or Geometry Optimization
+* &lt;program&gt; : program that generated the output (either Q_Chem or ORCA)</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This wrapper script only works for Single Point Calculations of the strained molecule.</p>
