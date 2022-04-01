@@ -48,8 +48,7 @@ subset of atoms, it is possible to quantify the strain build up within an adsorb
 Literature
 =============
 
-* Tim Stauch, Development and Application of Quantum Chemical Methods for the Description of Molecules Under Mechanical Stress, Dissertation, 
-   Ruprechts-Karls-Universität, Heidelberh (2016)
+* Tim Stauch, Development and Application of Quantum Chemical Methods for the Description of Molecules Under Mechanical Stress, Dissertation, Ruprechts-Karls-Universität, Heidelberg (2016)
 
 * T. Stauch, A. Dreuw, J. Chem. Phys. 140, 134107 (2014)
 
