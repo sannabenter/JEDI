@@ -45,6 +45,21 @@ When a molecule adsorbs onto a surface, the geometry of the adsorbate changes as
 to the relaxed molecule in the gas phase. As JEDI allows force analysis for only a 
 subset of atoms, it is possible to quantify the strain build up within an adsorbtion. 
 
+Literature
+=============
+
+* Tim Stauch, Development and Application of Quantum Chemical Methods for the Description of Molecules Under Mechanical Stress, Dissertation, 
+   Ruprechts-Karls-Universität, Heidelberh (2016)
+
+* T. Stauch, A. Dreuw, J. Chem. Phys. 140, 134107 (2014)
+
+* T. Stauch, A. Dreuw, J. Chem. Phys. 143, 074118 (2015)
+
+* T. Stauch, A. Dreuw, Acc. Chem. Res. 50, 1041-1048 (2017)
+
+* V. Bakken, T. Helgaker, J. Chem. Phys. 117, 9160-9174 (2002)
+
+
 Documentation
 =============
 
