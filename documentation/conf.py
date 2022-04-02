@@ -56,7 +56,7 @@ html_logo = '_static/images/Logo_JEDI_dark_grey.png'
 
 html_theme_options = {
     'style_nav_header_background': '#0b750a',
-    'logo_only': False
+    'logo_only': True
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
