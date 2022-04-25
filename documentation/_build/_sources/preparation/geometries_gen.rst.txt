@@ -28,7 +28,7 @@ standard Density Functional Theory (DFT) or wave function based methods can be u
 Strained geometry (xF)
 ----------------------
 The strained geometry can be displayed by the COGEF, EFEI or RBS
-(single point) calculation (see T. Stauch and A. Dreuws, J. Chem. Phys. 140, 134107 (2014)). 
+(single point) calculation (see T. Stauch and A. Dreuw, J. Chem. Phys. 140, 134107 (2014)). 
 
 
 

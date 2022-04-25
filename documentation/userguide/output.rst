@@ -75,7 +75,7 @@ VMD Analysis
 ------------
 
 To visualize the strain distribution an output is generated, that is readable in a 
-`VMD Analysis <https://www.ks.uiuc.edu/Research/vmd/>`_. The VMD Analysis a tool that
+`VMD Analysis <https://www.ks.uiuc.edu/Research/vmd/>`_. The VMD Analysis is a tool that
 can be used to color code the bonds. JEDI uses a user defined Python routine, that calculates 
 the strain in each bond and color codes it according to the strain. For this purpose, 
 tcl scripts for use in VMD will be generated automatically ("vmd_bl.tcl" for the bond lengths, "vmd_ba.tcl" for

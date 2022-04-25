@@ -3,8 +3,8 @@
 Welcome to JEDI, the Judgement of Energy Distribution Analysis
 ========================================================================
 
-The JEDI Analysis (Judgement of Energy Distribution Analysis) is a quantum chemical force analysis tool to calculate the distribution of stress
-energy in a mechanically deformed molecule. JEDI is developed in Python. Currently, the main contributor to JEDI is the `Institute for physical and theoretical Chemistry 
+The JEDI Analysis (Judgement of Energy Distribution Analysis) is a quantum chemical strain analysis tool for the distribution of strain
+mechanically deformed molecules. JEDI is developed in Python. Currently, the main contributor to JEDI is the `Institute for physical and theoretical Chemistry 
 <https://www.uni-bremen.de/institut-fuer-physikalische-und-theoretische-chemie>`_, 
 respectively the `AG Neudecker <https://www.uni-bremen.de/ag-neudecker/>`_ of the University of Bremen (https://www.uni-bremen.de/). 
 
@@ -48,7 +48,6 @@ subset of atoms, it is possible to quantify the strain build up within an adsorb
 Literature
 =============
 
-* Tim Stauch, Development and Application of Quantum Chemical Methods for the Description of Molecules Under Mechanical Stress, Dissertation, Ruprechts-Karls-Universität, Heidelberg (2016)
 
 * T. Stauch, A. Dreuw, J. Chem. Phys. 140, 134107 (2014)
 
@@ -56,7 +55,7 @@ Literature
 
 * T. Stauch, A. Dreuw, Acc. Chem. Res. 50, 1041-1048 (2017)
 
-* V. Bakken, T. Helgaker, J. Chem. Phys. 117, 9160-9174 (2002)
+* T. Stauch, A. Dreuw, J. Chem. Phys. 7, 1298-1302 (2016)
 
 
 Documentation

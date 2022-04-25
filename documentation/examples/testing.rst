@@ -8,7 +8,7 @@ provided in the `Github folder <https://github.com/sannabenter/JEDI/tree/main/te
 Preparation
 -----------
 The test calculations are done using `Q-Chem <https://www.q-chem.com/>`_. Methanole is calculated 
-under a hydrostatic pressure of 1 GPa using the `X-HCFF <https://manual.q-chem.com/5.4/sec_X-HCFF.html>` method. 
+under a hydrostatic pressure of 1 GPa using the `X-HCFF <https://manual.q-chem.com/5.4/sec_X-HCFF.html>`_ method. 
 Both geometries are calculated using the PBE method and a cc-pVDZ basis set. 
 
 To generate the needed input geometries, run ``xyz_gen.py`` with

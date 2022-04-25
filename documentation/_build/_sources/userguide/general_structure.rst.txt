@@ -2,11 +2,11 @@
 User Guide
 ==========
 
-The JEDI Analysis requires the input in redundant internal coordinates, where as the input data is 
-given in cartesian coordinates. The main routine of the JEDI Analysis converts the 
-cartesian coordinates and the Hessian in redundant internal coordinates to then apply the
+The JEDI Analysis produces output and performs the underlying calculations in redundant internal coordinates, 
+where as the input data is given in cartesian coordinates. The main routine of the JEDI Analysis converts the 
+cartesian coordinates and the Hessian into redundant internal coordinates to then apply the
 harmonic approximation to calculate the energies in the redundant internal coordinates.
-To convert the input into cartesian coordinates, the B-Matrix is calculated according to 
+To achieve the switching between the cartesian and redundant internal coordinates, the B-Matrix is calculated according to 
 V. Bakken, T. Helgaker, J. Chem. Phys. 117 (20) 2002. 
 
 General structure
@@ -14,7 +14,7 @@ General structure
 
 The main routine ``jedi.py`` runs all subscripts in the following order: 
 
-1.  Read x0, xF and the Hessian (``jedi_files.py``)
+1.  Read x0, xF, energies and the Hessian (``jedi_files.py``)
 
 2.  Calculate the redundant internal modes of the relaxed geometry (``jedi_rims.py``)
 
@@ -44,18 +44,18 @@ list of redundant internal modes.
 Generate VMD Output
 ...................
 
-By default the JEDI Analysis generates a VMD readable output, which defines colors
-bonds according to the stress energy stored in them (green: low strain, yellow: medium
+By default the JEDI Analysis generates a VMD readable output, which defines bonds colors
+according to the strain energy stored in them (green: low strain, yellow: medium
 strain, red: high strain; transitions are fluent).
 
 The --v flag can be either used to suppress the vmd_gen.py script or to manually specify
-a maximum strain that is colored "redest" in the VMD Analysis.
+a maximum strain that is colored "reddest" in the VMD Analysis.
 
 .. code-block:: console
 
     jedi.py --v n/maximum_strain
 
-For further information in the ``--d`` or ``--v`` flag, please take a closer look into the according modules. 
+For further information on the ``--d`` or ``--v`` flag, please take a closer look into the according modules. 
 
 
 
