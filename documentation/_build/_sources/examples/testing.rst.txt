@@ -99,4 +99,5 @@ In default, the VMD Analysis only displays H, C, N, O and S.
 It is possible to add one or more atoms that should be colored to these tcl scripts.
 For this, specify them as individual lines with their RGB values in a file vmd_add.txt.
 For adding Ti atoms, for example, vmd_add.txt would look like this:
-C 0.5 0.5 0.5
+
+Ti 0.5 0.5 0.5
