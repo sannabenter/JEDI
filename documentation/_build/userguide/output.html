@@ -105,39 +105,41 @@ please take a closer look into the <a class="reference external" href="https://j
 <section id="raw-output">
 <h2>Raw output<a class="headerlink" href="#raw-output" title="Permalink to this headline"></a></h2>
 <p>..code-block:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Preparing</span> <span class="n">the</span> <span class="n">JEDI</span> <span class="n">analysis</span><span class="o">...</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">Preparing</span> <span class="n">the</span> <span class="n">JEDI</span> <span class="n">analysis</span><span class="o">...</span>
 
 <span class="n">Starting</span> <span class="n">jedi_rims</span><span class="o">.</span><span class="n">py</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">redundant</span> <span class="n">internal</span> <span class="n">modes</span> <span class="kn">from</span> <span class="nn">cartesian</span> <span class="n">coordinates</span><span class="o">.</span>
 <span class="n">Starting</span> <span class="n">jedi_kill_atoms</span><span class="o">.</span><span class="n">py</span> <span class="n">to</span> <span class="n">check</span> <span class="k">if</span> <span class="n">atoms</span> <span class="n">specified</span><span class="p">,</span> <span class="n">that</span> <span class="n">should</span> <span class="n">be</span> <span class="n">ignored</span> <span class="ow">in</span> <span class="n">JEDI</span><span class="o">-</span><span class="n">Calculation</span><span class="o">.</span>
-    <span class="n">INFO</span><span class="p">:</span> <span class="n">No</span> <span class="n">user</span> <span class="nb">input</span> <span class="ow">in</span> <span class="n">jedi_kill_atoms_input</span><span class="o">.</span><span class="n">txt</span><span class="p">,</span> <span class="n">so</span> <span class="n">no</span> <span class="n">atoms</span> <span class="n">are</span> <span class="n">ignored</span> <span class="ow">in</span> <span class="n">JEDI</span><span class="o">-</span><span class="n">Calculation</span><span class="o">.</span>
+        <span class="n">INFO</span><span class="p">:</span> <span class="n">No</span> <span class="n">user</span> <span class="nb">input</span> <span class="ow">in</span> <span class="n">jedi_kill_atoms_input</span><span class="o">.</span><span class="n">txt</span><span class="p">,</span> <span class="n">so</span> <span class="n">no</span> <span class="n">atoms</span> <span class="n">are</span> <span class="n">ignored</span> <span class="ow">in</span> <span class="n">JEDI</span><span class="o">-</span><span class="n">Calculation</span><span class="o">.</span>
 <span class="n">Starting</span> <span class="n">b_mat</span><span class="o">.</span><span class="n">py</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">the</span> <span class="n">B</span><span class="o">-</span><span class="n">Matrix</span><span class="o">.</span>
 <span class="n">Starting</span> <span class="n">delta_q</span><span class="o">.</span><span class="n">py</span> <span class="n">to</span> <span class="n">calculate</span> <span class="n">q0</span><span class="p">,</span> <span class="n">qF</span> <span class="ow">and</span> <span class="n">delta_q</span><span class="o">.</span>
 
 
-                 <span class="n">JEDI</span> <span class="n">ANALYSIS</span>
-       <span class="n">Judgement</span> <span class="n">of</span> <span class="n">Energy</span> <span class="n">DIstribution</span>
 
+<span class="o">************************************************</span>
+<span class="o">*</span>                 <span class="n">JEDI</span> <span class="n">ANALYSIS</span>                <span class="o">*</span>
+<span class="o">*</span>       <span class="n">Judgement</span> <span class="n">of</span> <span class="n">Energy</span> <span class="n">DIstribution</span>       <span class="o">*</span>
+<span class="o">************************************************</span>
 
                 <span class="n">Strain</span> <span class="n">Energy</span> <span class="p">(</span><span class="n">h</span><span class="p">)</span>  <span class="n">Deviation</span> <span class="p">(</span><span class="o">%</span><span class="p">)</span>
     <span class="n">Geometries</span>      <span class="mf">0.01464175</span>           <span class="o">-</span>
 <span class="n">Red</span><span class="o">.</span> <span class="n">Int</span><span class="o">.</span> <span class="n">Modes</span>      <span class="mf">0.01274058</span>        <span class="o">-</span><span class="mf">12.98</span>
 
-<span class="n">RIM</span> <span class="n">No</span><span class="o">.</span>    <span class="n">RIM</span> <span class="nb">type</span>             <span class="n">Percentage</span>    <span class="n">Energy</span> <span class="p">(</span><span class="n">h</span><span class="p">)</span>
-    <span class="mi">1</span>       <span class="n">BL</span> <span class="mi">2</span> <span class="mi">1</span>                 <span class="mf">16.0</span>        <span class="mf">0.0020347</span>
-    <span class="mi">2</span>       <span class="n">BL</span> <span class="mi">3</span> <span class="mi">1</span>                 <span class="mf">15.9</span>        <span class="mf">0.0020255</span>
-    <span class="mi">3</span>       <span class="n">BL</span> <span class="mi">4</span> <span class="mi">1</span>                 <span class="mf">15.0</span>        <span class="mf">0.0019052</span>
-    <span class="mi">4</span>       <span class="n">BL</span> <span class="mi">5</span> <span class="mi">1</span>                 <span class="mf">41.5</span>        <span class="mf">0.0052871</span>
-    <span class="mi">5</span>       <span class="n">BL</span> <span class="mi">6</span> <span class="mi">5</span>                 <span class="mf">12.1</span>        <span class="mf">0.0015433</span>
-    <span class="mi">6</span>       <span class="n">BA</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">3</span>               <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000037</span>
-    <span class="mi">7</span>       <span class="n">BA</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">4</span>                <span class="mf">0.0</span>        <span class="mf">0.0000062</span>
-    <span class="mi">8</span>       <span class="n">BA</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">5</span>               <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000045</span>
-    <span class="mi">9</span>       <span class="n">BA</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">4</span>               <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000023</span>
-    <span class="mi">10</span>       <span class="n">BA</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">5</span>               <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000032</span>
-    <span class="mi">11</span>       <span class="n">BA</span> <span class="mi">4</span> <span class="mi">1</span> <span class="mi">5</span>                <span class="mf">0.1</span>        <span class="mf">0.0000133</span>
-    <span class="mi">12</span>       <span class="n">BA</span> <span class="mi">1</span> <span class="mi">5</span> <span class="mi">6</span>               <span class="o">-</span><span class="mf">0.5</span>       <span class="o">-</span><span class="mf">0.0000645</span>
-    <span class="mi">13</span>       <span class="n">DA</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">1</span> <span class="mi">2</span>              <span class="mf">0.0</span>        <span class="mf">0.0000012</span>
-    <span class="mi">14</span>       <span class="n">DA</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">1</span> <span class="mi">3</span>              <span class="mf">0.0</span>        <span class="mf">0.0000034</span>
-    <span class="mi">15</span>       <span class="n">DA</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">1</span> <span class="mi">4</span>             <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000010</span>
+<span class="n">RIM</span> <span class="n">No</span><span class="o">.</span>    <span class="n">RIM</span> <span class="nb">type</span>                <span class="n">delta_q</span> <span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">u</span><span class="o">.</span><span class="p">)</span> <span class="n">Percentage</span>    <span class="n">Energy</span> <span class="p">(</span><span class="n">h</span><span class="p">)</span>
+    <span class="mi">1</span>       <span class="n">BL</span> <span class="mi">2</span> <span class="mi">1</span>                   <span class="o">-</span><span class="mf">0.1094527</span>     <span class="mf">16.0</span>        <span class="mf">0.0020347</span>
+    <span class="mi">2</span>       <span class="n">BL</span> <span class="mi">3</span> <span class="mi">1</span>                   <span class="o">-</span><span class="mf">0.1095745</span>     <span class="mf">15.9</span>        <span class="mf">0.0020255</span>
+    <span class="mi">3</span>       <span class="n">BL</span> <span class="mi">4</span> <span class="mi">1</span>                   <span class="o">-</span><span class="mf">0.1043128</span>     <span class="mf">15.0</span>        <span class="mf">0.0019052</span>
+    <span class="mi">4</span>       <span class="n">BL</span> <span class="mi">5</span> <span class="mi">1</span>                   <span class="o">-</span><span class="mf">0.1761543</span>     <span class="mf">41.5</span>        <span class="mf">0.0052871</span>
+    <span class="mi">5</span>       <span class="n">BL</span> <span class="mi">6</span> <span class="mi">5</span>                   <span class="o">-</span><span class="mf">0.0814846</span>     <span class="mf">12.1</span>        <span class="mf">0.0015433</span>
+    <span class="mi">6</span>       <span class="n">BA</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">3</span>                 <span class="o">-</span><span class="mf">0.0193343</span>     <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000037</span>
+    <span class="mi">7</span>       <span class="n">BA</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">4</span>                 <span class="o">-</span><span class="mf">0.0277224</span>      <span class="mf">0.0</span>        <span class="mf">0.0000062</span>
+    <span class="mi">8</span>       <span class="n">BA</span> <span class="mi">2</span> <span class="mi">1</span> <span class="mi">5</span>                  <span class="mf">0.0172497</span>     <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000045</span>
+    <span class="mi">9</span>       <span class="n">BA</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">4</span>                 <span class="o">-</span><span class="mf">0.0246658</span>     <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000023</span>
+    <span class="mi">10</span>       <span class="n">BA</span> <span class="mi">3</span> <span class="mi">1</span> <span class="mi">5</span>                  <span class="mf">0.0161736</span>     <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000032</span>
+    <span class="mi">11</span>       <span class="n">BA</span> <span class="mi">4</span> <span class="mi">1</span> <span class="mi">5</span>                  <span class="mf">0.0323722</span>      <span class="mf">0.1</span>        <span class="mf">0.0000133</span>
+    <span class="mi">12</span>       <span class="n">BA</span> <span class="mi">1</span> <span class="mi">5</span> <span class="mi">6</span>                  <span class="mf">0.0375386</span>     <span class="o">-</span><span class="mf">0.5</span>       <span class="o">-</span><span class="mf">0.0000645</span>
+    <span class="mi">13</span>       <span class="n">DA</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">1</span> <span class="mi">2</span>                <span class="mf">0.0218233</span>      <span class="mf">0.0</span>        <span class="mf">0.0000012</span>
+    <span class="mi">14</span>       <span class="n">DA</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">1</span> <span class="mi">3</span>                <span class="mf">0.0205283</span>      <span class="mf">0.0</span>        <span class="mf">0.0000034</span>
+    <span class="mi">15</span>       <span class="n">DA</span> <span class="mi">6</span> <span class="mi">5</span> <span class="mi">1</span> <span class="mi">4</span>                <span class="mf">0.0100497</span>     <span class="o">-</span><span class="mf">0.0</span>       <span class="o">-</span><span class="mf">0.0000010</span>
 
 
 <span class="n">Creating</span> <span class="n">tcl</span> <span class="n">scripts</span> <span class="k">for</span> <span class="n">generating</span> <span class="n">color</span><span class="o">-</span><span class="n">coded</span> <span class="n">structures</span> <span class="ow">in</span> <span class="n">VMD</span><span class="o">...</span>
@@ -158,11 +160,11 @@ please take a closer look into the <a class="reference external" href="https://j
 
 <span class="n">JEDI</span> <span class="n">terminated</span> <span class="n">successfully</span><span class="o">.</span>
 
-<span class="s2">&quot;No reward is worth this.&quot;</span> <span class="p">(</span><span class="n">Han</span> <span class="n">Solo</span><span class="p">)</span>
+<span class="s2">&quot;You don&#39;t have to do this to impress me.&quot;</span> <span class="p">(</span><span class="n">Princess</span> <span class="n">Leia</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The raw output shows both the strain energies of the ab initio calculations and the JEDI Analysis. The deviation can be
-interpreted as error of the harmonic approximation. This print out is followed by the percentages of the strain
+interpreted as error of the harmonic approximation. This print out is followed by the geometric change and the percentages of the strain
 in each redundant internal mode. Lastly, the isolated strains are added up in each class of redundant internal modes
 (bond lengths, bond angles and torsion angles).</p>
 </section>

@@ -11,39 +11,41 @@ Raw output
 
 ..code-block:: 
 
-    Preparing the JEDI analysis... 
+        Preparing the JEDI analysis... 
 
     Starting jedi_rims.py to calculate redundant internal modes from cartesian coordinates.
     Starting jedi_kill_atoms.py to check if atoms specified, that should be ignored in JEDI-Calculation.
-        INFO: No user input in jedi_kill_atoms_input.txt, so no atoms are ignored in JEDI-Calculation.
+            INFO: No user input in jedi_kill_atoms_input.txt, so no atoms are ignored in JEDI-Calculation.
     Starting b_mat.py to calculate the B-Matrix.
     Starting delta_q.py to calculate q0, qF and delta_q.
 
-    
-                     JEDI ANALYSIS                
-           Judgement of Energy DIstribution       
 
+
+    ************************************************
+    *                 JEDI ANALYSIS                *
+    *       Judgement of Energy DIstribution       *
+    ************************************************
 
                     Strain Energy (h)  Deviation (%)
         Geometries      0.01464175           -
     Red. Int. Modes      0.01274058        -12.98
 
-    RIM No.    RIM type             Percentage    Energy (h)
-        1       BL 2 1                 16.0        0.0020347
-        2       BL 3 1                 15.9        0.0020255
-        3       BL 4 1                 15.0        0.0019052
-        4       BL 5 1                 41.5        0.0052871
-        5       BL 6 5                 12.1        0.0015433
-        6       BA 2 1 3               -0.0       -0.0000037
-        7       BA 2 1 4                0.0        0.0000062
-        8       BA 2 1 5               -0.0       -0.0000045
-        9       BA 3 1 4               -0.0       -0.0000023
-        10       BA 3 1 5               -0.0       -0.0000032
-        11       BA 4 1 5                0.1        0.0000133
-        12       BA 1 5 6               -0.5       -0.0000645
-        13       DA 6 5 1 2              0.0        0.0000012
-        14       DA 6 5 1 3              0.0        0.0000034
-        15       DA 6 5 1 4             -0.0       -0.0000010
+    RIM No.    RIM type                delta_q (a.u.) Percentage    Energy (h)
+        1       BL 2 1                   -0.1094527     16.0        0.0020347
+        2       BL 3 1                   -0.1095745     15.9        0.0020255
+        3       BL 4 1                   -0.1043128     15.0        0.0019052
+        4       BL 5 1                   -0.1761543     41.5        0.0052871
+        5       BL 6 5                   -0.0814846     12.1        0.0015433
+        6       BA 2 1 3                 -0.0193343     -0.0       -0.0000037
+        7       BA 2 1 4                 -0.0277224      0.0        0.0000062
+        8       BA 2 1 5                  0.0172497     -0.0       -0.0000045
+        9       BA 3 1 4                 -0.0246658     -0.0       -0.0000023
+        10       BA 3 1 5                  0.0161736     -0.0       -0.0000032
+        11       BA 4 1 5                  0.0323722      0.1        0.0000133
+        12       BA 1 5 6                  0.0375386     -0.5       -0.0000645
+        13       DA 6 5 1 2                0.0218233      0.0        0.0000012
+        14       DA 6 5 1 3                0.0205283      0.0        0.0000034
+        15       DA 6 5 1 4                0.0100497     -0.0       -0.0000010
 
 
     Creating tcl scripts for generating color-coded structures in VMD...
@@ -64,10 +66,10 @@ Raw output
 
     JEDI terminated successfully.
 
-    "No reward is worth this." (Han Solo)
+    "You don't have to do this to impress me." (Princess Leia)
 
 The raw output shows both the strain energies of the ab initio calculations and the JEDI Analysis. The deviation can be
-interpreted as error of the harmonic approximation. This print out is followed by the percentages of the strain 
+interpreted as error of the harmonic approximation. This print out is followed by the geometric change and the percentages of the strain 
 in each redundant internal mode. Lastly, the isolated strains are added up in each class of redundant internal modes 
 (bond lengths, bond angles and torsion angles).
 
