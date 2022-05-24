@@ -146,9 +146,9 @@ if __name__ == '__main__':
 
 
     # JEDI analysis
-    print("\n RIM No.    RIM type             Percentage    Energy (h)")
+    print("\n RIM No.    RIM type                delta_q (a.u.) Percentage    Energy (h)")
     for i in range(NRIMs):
-        print('%6i%7s%-18s%9.1f%17.7f' % (i+1, " ", RIM_type[i], proc_E_RIMs[i], E_RIMs[i]))
+        print('%6i%7s%-18s%17.7f%9.1f%17.7f' % (i+1, " ", RIM_type[i], delta_q[i], proc_E_RIMs[i], E_RIMs[i]))
 
     # Write the energies to a file
     f = open('energies.txt', 'w')
