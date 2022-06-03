@@ -30,10 +30,12 @@ if not os.path.exists("H_Cart.txt"):
 # Get the atomnumber and compare xF and x0. 
 
 with open("x0.txt", encoding="utf8", errors='ignore') as x0:
-    NAtom_x0 = (x0.read())[0]
+    x0_coords = (x0.read())
+    NAtom_x0 = x0_coords.split('\n', 1)[0]
     x0.close()
 with open("xF.txt", encoding="utf8", errors='ignore') as xF:
-    NAtom_xF = (xF.read())[0]
+    xF_coords = (xF.read())
+    NAtom_xF = xF_coords.split('\n', 1)[0]
     xF.close()
 
 if NAtom_x0 == NAtom_xF: 
