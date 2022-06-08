@@ -47,7 +47,12 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="#building-guide">Building Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#update-package-sources-check-install-git-and-python">Update package sources, Check / install Git and Python:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-package-sources-check-install-git-and-python">Update package sources, Check / install Git and Python:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Git</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pip-and-libraries">pip and libraries</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#clone-the-jedi-repository">Clone the JEDI repository</a></li>
 </ul>
 </li>
@@ -123,6 +128,8 @@ from <a class="reference external" href="https://github.com/">Github</a> to a lo
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt update</span>
 </pre></div>
 </div>
+<section id="id2">
+<h3>Git<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h3>
 <p>Usually <code class="docutils literal notranslate"><span class="pre">git</span></code> should be installed already, however check if git is really installed:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git --version</span>
 </pre></div>
@@ -131,6 +138,9 @@ from <a class="reference external" href="https://github.com/">Github</a> to a lo
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt install git</span>
 </pre></div>
 </div>
+</section>
+<section id="id3">
+<h3>Python<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h3>
 <p>JEDI runs with <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.7</span></code>. Check, if it is installed with</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python --version</span>
 </pre></div>
@@ -139,6 +149,27 @@ from <a class="reference external" href="https://github.com/">Github</a> to a lo
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo apt install python3.7</span>
 </pre></div>
 </div>
+</section>
+<section id="pip-and-libraries">
+<h3>pip and libraries<a class="headerlink" href="#pip-and-libraries" title="Permalink to this headline"></a></h3>
+<p>The JEDI analysis uses the libraries pandas and NumPy. To run JEDI both these libraries need to be installed.
+You can use the package installer <code class="docutils literal notranslate"><span class="pre">pip</span></code> to do that. First, check if pip is available by running:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m pip --version</span>
+</pre></div>
+</div>
+<p>If pip is not already installed, then bootstrap it from the standard library:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m ensurepip --default-pip</span>
+</pre></div>
+</div>
+<p>After ensuring that pip is installed, pandas and NumPy can be installed via pip from PyPI using</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install pandas</span>
+</pre></div>
+</div>
+<p>and</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install numpy</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="clone-the-jedi-repository">
 <h2>Clone the JEDI repository<a class="headerlink" href="#clone-the-jedi-repository" title="Permalink to this headline"></a></h2>

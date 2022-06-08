@@ -22,9 +22,9 @@ Building Guide
 
 JEDI is primarily developed and used on a Windows system, but can be run with Linux systems. 
 
---------------------------------------------
+-------------------------------------------------------
 Update package sources, Check / install Git and Python:
---------------------------------------------
+-------------------------------------------------------
 
 First the package sources should be updated:
 
