@@ -177,8 +177,9 @@ if da_state == False:
                     df_torsionable_bonds.loc[row_index] = [self_row['BL_1'], self_row['BL_2']] 
                     bond_partner1 = False
                     bond_partner2 = False
-                        
+
                     row_index += 1 
+                    break
 
     row = 0
     for torsionable_index, torsionable_row in df_torsionable_bonds.iterrows():
