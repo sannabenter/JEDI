@@ -32,6 +32,9 @@ First the package sources should be updated:
 
     sudo apt update
 
+Git 
+---
+
 Usually ``git`` should be installed already, however check if git is really installed: 
 
 .. code-block:: console
@@ -45,6 +48,10 @@ prints the installed ``git`` version. If ``git`` is not installed, install it wi
     sudo apt install git 
 
 
+Python 
+------
+
+
 JEDI runs with ``Python 3.7``. Check, if it is installed with
 
 .. code-block:: console
@@ -56,6 +63,34 @@ If ``Python 2.7`` is running on your system or if ``Python`` is not installed, i
 .. code-block:: console
 
     sudo apt install python3.7
+
+pip and libraries
+-----------------
+
+The JEDI analysis uses the libraries pandas and NumPy. To run JEDI both these libraries need to be installed. 
+You can use the package installer ``pip`` to do that. First, check if pip is available by running:
+
+.. code-block:: console
+
+    python -m pip --version
+
+If pip is not already installed, then bootstrap it from the standard library:
+
+.. code-block:: console
+
+    python -m ensurepip --default-pip
+
+After ensuring that pip is installed, pandas and NumPy can be installed via pip from PyPI using
+
+.. code-block:: console
+
+    pip install pandas 
+
+and 
+
+.. code-block:: console
+
+    pip install numpy
 
 
 --------------------------

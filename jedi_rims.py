@@ -111,11 +111,11 @@ if bl_state == False:
 
                     row_index += 1 
     
-
-    with open("bl.txt", "a") as bl_file:
-        for index, row in df_bl.iterrows():
-            print(row['BL_1'],"\t", row['BL_2'], file = bl_file) # create file containing bonds
-        bl_file.close()
+    if not df_bl.empty: 
+        with open("bl.txt", "a") as bl_file:
+            for index, row in df_bl.iterrows():
+                print(row['BL_1'],"\t", row['BL_2'], file = bl_file) # create file containing bonds
+            bl_file.close()
 
 
     ####################################
@@ -146,18 +146,17 @@ if ba_state == False:
     # sort the dataframe according to Bakken and Helgaker (used to calculate b-matrix in jedi_b.py)
     df_ba_sorted = df_ba.sort_values(by=['BA_2', 'BA_3'])
 
-    with open("ba.txt", "a") as ba_file:
-        for index, row in df_ba.iterrows():
-            print(row['BA_1'], "\t", row['BA_2'], "\t", row['BA_3'], file = ba_file) # create file containing bond angles
-        ba_file.close()
+    if not df_ba.empty: 
+        with open("ba.txt", "a") as ba_file:
+            for index, row in df_ba.iterrows():
+                print(row['BA_1'], "\t", row['BA_2'], "\t", row['BA_3'], file = ba_file) # create file containing bond angles
+            ba_file.close()
 
 
     ####################################
     ########### TORSION ANGLES #########
     ####################################
 
-################################### HIER ÄNDERN ############################
-# df_bl = df_bl.drop([5, 7]) # only for special case
 
 if da_state == False: 
     row_index = 0
@@ -215,7 +214,8 @@ if da_state == False:
                 df_da.loc[row] = [single_TA_Atom_1,  torsionable_row['TA_Atom_1'], torsionable_row['TA_Atom_2'], single_TA_Atom_3]
                 row += 1
 
-    with open("da.txt", "a") as da_file:
-        for index, row in df_da.iterrows():
-            print(row['DA_1'], "\t", row['DA_2'], "\t", row['DA_3'], "\t", row['DA_4'], file = da_file) # create file containing torsion angles
-        da_file.close()
+    if not df_da.empty: 
+        with open("da.txt", "a") as da_file:
+            for index, row in df_da.iterrows():
+                print(row['DA_1'], "\t", row['DA_2'], "\t", row['DA_3'], "\t", row['DA_4'], file = da_file) # create file containing torsion angles
+            da_file.close()
